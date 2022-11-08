@@ -26,7 +26,7 @@ import CardPrensa from './child/cardPrensa.vue';
                     fecha: "12-04-2021",
                     autor: "Pedro Pony",
                     title: "171 aniversario de Felipe Carrillo Puerto",
-                    image: "https://www.felipecarrillopuerto.gob.mx/images/noticias/2021/2021101601.jpg",
+                    image: require('@/assets/alex/prensa1.jpg'),
                     content: "Estamos en la celebración del 171 Aniversario de la fundación de la Ciudad de Felipe Carrillo Puerto.Esta mañana recibimos en la plaza pública a la presidenta municipal Mary Hernández, en compañía de la presidenta municipal de Benito Juárez, Mara Lezama; el presidente municipal de José María Morelos, Erik Borges Yam; a todos los regidores y parte del equipo del H. Ayuntamiento, para inaugurar esta fiesta municipal que se llevará a cabo este fin de semana."
                 },
                 {
@@ -35,7 +35,7 @@ import CardPrensa from './child/cardPrensa.vue';
                     fecha: "12-04-2021",
                     autor: "Danny el Perro",
                     title: "Visita a las instalaciones del DIF CArrillo Puerto",
-                    image: "https://www.felipecarrillopuerto.gob.mx/images/noticias/2021/2021101202.jpg",
+                    image: require('@/assets/alex/prensa2.jpg'),
                     content: "Mary Hernández, Presidenta Municipal de Felipe Carrillo Puerto, trabaja fuertemente para mejorar la calidad y el servicio que brinda el Sistema para el Desarrollo Integral de la Familia (DIF Felipe Carrillo Puerto).En esta nueva transformación se necesita impulsar el altruismo e implementar estrategias en materia de asistencia social, bienestar familiar, perspectiva de género, entre otros temas."
                 }
             ]
