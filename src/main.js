@@ -8,10 +8,20 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueTheMask from 'vue-the-mask'
 import vuetify from './plugins/vuetify'
+import * as VueGoogleMaps from 'vue2-google-maps'
+
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyBCBF6Alb7jl0V0cKlEW2mMAyh9MDmJL7M',
+    libraries: 'places', 
+  },
+})
 
 Vue.use(VueTheMask)
 Vue.use(VueSweetalert2)
 Vue.config.productionTip = false
+
 
 new Vue({
   router,

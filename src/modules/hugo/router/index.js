@@ -4,9 +4,14 @@ export default {
     children:
         [
             {
-                path:"/inicio",
-                name:"primero",
-                component: () => import(/* webpackChunkName: "Presidente Municipal" */ '../components/sheetPage.vue'),
+                path:"/organigrama",
+                name:"organigrama",
+                component: () => import(/* webpackChunkName: "Presidente Municipal" */ '../components/organigrama/organMpal.vue'),
+            },
+            {
+                path:"/directorioMpal",
+                name:"directorio",
+                component: () => import(/* webpackChunkName: "Presidente Municipal" */ '../components/directorio/directorioMpal.vue'),
             },
         ]
 }

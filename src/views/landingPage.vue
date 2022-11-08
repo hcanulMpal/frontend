@@ -85,11 +85,11 @@
                 <div class="facebook">
                     <a href="https://www.facebook.com/AyuntamientoFCP" target="_blank"><v-icon color="white">mdi-facebook</v-icon></a>
                 </div>
-                <div class="instagram">
+                <!-- <div class="instagram">
                     <a href="https://instagram.com/ma.ryhernandez?igshid=YmMyMTA2M2Y=" target="_blank"><v-icon color="white">mdi-instagram</v-icon></a>
-                </div>
+                </div> -->
                 <div class="twitter">
-                    <a href="#" target="_blank"><v-icon color="white">mdi-twitter</v-icon></a>
+                    <a href="https://twitter.com/Ayto_FCP?t=JX__rGKIFnjOYeuvvdoiAw&s=09" target="_blank"><v-icon color="white">mdi-twitter</v-icon></a>
                 </div>
             </div>
             <div v-if="$route.path == '/'">
@@ -117,10 +117,9 @@ export default {
                 active: true,
                 title: 'Gobierno Municipal',
                 items: [
-                    { title: 'Presidente Municipal', enlace:{name: 'presidente'}, icon:"mdi-account-outline" },
                     { title: 'Organigrama', enlace:{name: 'organigrama'}, icon:"mdi-city" },
                     { title: 'Directorio Mpal.', enlace:{name: 'directorio'}, icon:"mdi-library" },
-                    { title: 'Cabildo Mpal.', enlace:{name: 'cabildoMpal'}, icon:"mdi-account-box" },
+                    // { title: 'Cabildo Mpal.', enlace:{name: 'cabildoMpal'}, icon:"mdi-account-box" },
                 ],
             },
             {

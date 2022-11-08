@@ -20,9 +20,32 @@
                         <v-carousel-item
                         v-for="(item,i) in items2"
                         :key="i"
-                        :src="item.src"
                         
-                        ></v-carousel-item>
+                        >
+                            <v-img
+                                dark
+                                :src="item.src"
+                                cols="6" xs sm md lg="6" xl="3"
+                            >
+                                <v-row
+                                    align="center"
+                                    justify="center"
+                                >
+                                    <v-col
+                                        class="text-center"
+                                        cols="12"
+                                    >
+                                        <h1 class="text-h4 mb-4">
+                                            {{item.title}}
+                                        </h1>
+                                        <h4 class="subheading">
+                                            {{item.text}}
+                                        </h4>
+                                        <v-btn  color="primary" @click="dialogo(item)"> Ver video </v-btn>
+                                    </v-col>
+                                </v-row>
+                            </v-img>
+                        </v-carousel-item>
                     </v-carousel>
                     <v-card
                         class="mx-auto"
@@ -233,23 +256,75 @@ export default {
             return{
                 selectItem:1,
                 items2: [
-          {
-            src: require("@/assets/mary-cancer.jpg"),
-          },
-          {
-            src: require("@/assets/mary-premio.jpg"),
-          },
-          {
-            src: require("@/assets/mary-herra.jpg"),
-          },
-          {
-            src: require("@/assets/mary-home.jpg"),
-          },
-          {
-            src: require("@/assets/mary-pastel.jpg"),
-          },
-        ],
+                    {
+                        text:"Atencion y cercania hacia todo Felipe Carrillo Puerto",
+                        title:"Ramonal",
+                        url: require("@/assets/Bullets/RAMONAL.mp4"),
+                        src: require("@/assets/Bullets/ramonal.png"),
+                    },
+                    {
+                        text:"Educación en Felipe Carrillo Puerto",
+                        title:"Educación",
+                        url: require("@/assets/Bullets/EDUCACION.mp4"),
+                        src: require("@/assets/Bullets/educacion.png"),
+                    },
+                    {
+                        text:"Espacios limpios en Felipe Carrillo Puerto",
+                        title:"Espacios Limpios",
+                        url: require("@/assets/Bullets/ESPACIOS.mp4"),
+                        src: require("@/assets/Bullets/espacios.png"),
+                    },
+                    {
+                        text:"Infraestructura en Felipe Carrillo Puerto",
+                        title:"Infraestructura",
+                        url: require("@/assets/Bullets/INFRAESTRUCTURA.mp4"),
+                        src: require("@/assets/Bullets/infraestructura.png"),
+                    },
+                    {
+                        text:"Ingrsos en Felipe Carrillo Puerto",
+                        title:"Ingresos",
+                        url: require("@/assets/Bullets/INGRESOS.mp4"),
+                        src: require("@/assets/Bullets/ingresos.png"),
+                    },
+                    {
+                        text:"Salud en Felipe Carrillo Puerto",
+                        title:"Salud",
+                        url: require("@/assets/Bullets/SALUD.mp4"),
+                        src: require("@/assets/Bullets/salud.png"),
+                    },
+                    {
+                        text:"Seguridad en Felipe Carrillo Puerto",
+                        title:"Seguridad",
+                        url: require("@/assets/Bullets/SEGURIDAD.mp4"),
+                        src: require("@/assets/Bullets/seguridad.png"),
+                    },
+                    {
+                        text:"Politica Pública de Bienestas en Felipe Carrillo Puerto",
+                        title:"Politica Pública",
+                        url: require("@/assets/Bullets/POLITICA.mp4"),
+                        src: require("@/assets/Bullets/politica.png"),
+                    },
+                    ],
             }
         },
+    methods:{
+        dialogo(data){
+            this.$swal({
+                title: data.title,
+                text: data.text,
+                html:
+                    '<div style="position: relative;'+
+                        'overflow: hidden;'+
+                        'width: 100%;'+
+                        'padding-top: 56.25%;">'+
+                        '<iframe style="position: absolute; top: 0;'+
+                        'left: 0;bottom: 0;right: 0;width: 100%; height: 100%;" src='+data.url+'></iframe>'+
+                    '</div>',
+                imageWidth: 800,
+                imageHeight: 750,
+                imageAlt: 'Custom image',
+            })
+        },
+    }
 }
 </script>
