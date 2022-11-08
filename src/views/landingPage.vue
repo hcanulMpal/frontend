@@ -132,9 +132,7 @@ export default {
                     { title: 'Turismo', enlace:{name: 'turismoMpal'}, icon:"mdi-library" },
                     { title: 'Escudo', enlace:{name: 'escudoMpal'}, icon:"mdi-account-box" },
                     { title: 'Fiestas y Ferias', enlace:{name: 'fiestasFerias'}, icon:"mdi-city" },
-                    { title: 'Telefonos de Emergencia', enlace:{name: 'telEmergencia'}, icon:"mdi-library" },
-                    { title: 'Efemerides', enlace:{name: 'cabildoMpal'}, icon:"mdi-account-box" },
-                ],
+                    { title: 'Telefonos de Emergencia', enlace:{name: 'telEmergencia'}, icon:"mdi-library" },                ],
             },
             
         ],
