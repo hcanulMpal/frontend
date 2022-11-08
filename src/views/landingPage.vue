@@ -135,6 +135,22 @@ export default {
                     { title: 'Efemerides', enlace:{name: 'cabildoMpal'}, icon:"mdi-account-box" },
                 ],
             },
+            {
+                action: 'mdi-silo',
+                title: 'Sala de Prensa',
+                items: [
+                    { title: 'Prensa', enlace:{name:'prensaSalaP'}, icon:"mdi-newspaper-variant"},
+                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper-variant"}
+                ]
+                
+            },
+            {
+                action: 'mdi-silo',
+                title: 'Presidencia',
+                items: [
+                { title: 'Presidenta', enlace:{name:'presidentaPre'}, icon:"mdi-account-outline"},
+                ]
+            }
             
         ],
     }),
