@@ -88,9 +88,9 @@
                 <!-- <div class="instagram">
                     <a href="https://instagram.com/ma.ryhernandez?igshid=YmMyMTA2M2Y=" target="_blank"><v-icon color="white">mdi-instagram</v-icon></a>
                 </div> -->
-                <div class="twitter">
+                <!-- <div class="twitter">
                     <a href="https://twitter.com/Ayto_FCP?t=JX__rGKIFnjOYeuvvdoiAw&s=09" target="_blank"><v-icon color="white">mdi-twitter</v-icon></a>
-                </div>
+                </div> -->
             </div>
             <div v-if="$route.path == '/'">
                 <sheet-page class="pt-9"></sheet-page>
@@ -134,16 +134,16 @@ export default {
                     { title: 'Telefonos de Emergencia', enlace:{name: 'telEmergencia'}, icon:"mdi-library" },                ],
             },
             {
-                action: 'mdi-silo',
+                action: 'mdi-movie-roll',
                 title: 'Sala de Prensa',
                 items: [
                     { title: 'Prensa', enlace:{name:'prensaSalaP'}, icon:"mdi-newspaper-variant"},
-                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper-variant"}
+                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper"}
                 ]
                 
             },
             {
-                action: 'mdi-silo',
+                action: 'mdi-nut',
                 title: 'Presidencia',
                 items: [
                 { title: 'Presidenta', enlace:{name:'presidentaPre'}, icon:"mdi-account-outline"},
