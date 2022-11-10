@@ -4,7 +4,9 @@
             <v-responsive>
                 <section class="mt-15 mb-15">
                     <v-row class="justify-center">
-                        <CardAvisos v-for="aviso in avisos" :key="aviso.id" :aviso="aviso"></CardAvisos>
+                        <v-col lg="12" md="8" sm="8" v-for="aviso in avisos" :key="aviso.id">
+                            <CardAvisos  :aviso="aviso"></CardAvisos>
+                        </v-col>
                     </v-row>
                 </section>
             </v-responsive>
