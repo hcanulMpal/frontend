@@ -33,6 +33,11 @@ export default {
                 name:"fiestasFerias",
                 component: () => import(/* webpackChunkName: "Presidente Municipal" */ '../components/nMunicipio/fiestasFerias.vue'),
             },
+            {
+                path:"/culturaMcpio",
+                name:"culturaMcpio",
+                component: () => import(/* webpackChunkName: "Presidente Municipal" */ '../components/culturaMcpio.vue'),
+            },
 
         ]
 }

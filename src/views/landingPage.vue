@@ -72,6 +72,15 @@
                     </v-list-item-content>
                     </v-list-item>
                 </v-list-group>
+
+                <v-list-item to="/culturaMcpio">
+                    <v-list-item-icon>
+                        <v-icon >mdi-pillar</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title  @click="mini = !mini">Cultura</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
                 </v-list>
             </v-flex>
         </v-navigation-drawer>
@@ -127,8 +136,8 @@ export default {
                 title: 'Nuestro Municipio',
                 items: [
                     { title: 'Historia', enlace:{name: 'historiaMpal'}, icon:"mdi-account-outline" },
-                    { title: 'Ubicacion', enlace:{name: 'ubicacionMpal'}, icon:"mdi-city" },
-                    { title: 'Turismo', enlace:{name: 'turismoMpal'}, icon:"mdi-library" },
+                    { title: 'Ubicacion', enlace:{name: 'ubicacionMpal'}, icon:"mdi-map-marker" },
+                    { title: 'Turismo', enlace:{name: 'turismoMpal'}, icon:"mdi-map" },
                     { title: 'Escudo', enlace:{name: 'escudoMpal'}, icon:"mdi-account-box" },
                     { title: 'Fiestas y Ferias', enlace:{name: 'fiestasFerias'}, icon:"mdi-city" },
                     { title: 'Telefonos de Emergencia', enlace:{name: 'telEmergencia'}, icon:"mdi-library" },                ],
@@ -148,7 +157,7 @@ export default {
                 items: [
                 { title: 'Presidenta', enlace:{name:'presidentaPre'}, icon:"mdi-account-outline"},
                 ]
-            }
+            },
             
         ],
     }),

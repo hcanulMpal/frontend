@@ -16,7 +16,7 @@
             </section>
             <section>
                 <div >
-                    <v-carousel hide-delimiters cycle  interval="4000" show-arrows-on-hove >
+                    <v-carousel hide-delimiters cycle  interval="4000" show-arrows-on-hove height="auto">
                         <v-carousel-item
                         v-for="(item,i) in items2"
                         :key="i"
