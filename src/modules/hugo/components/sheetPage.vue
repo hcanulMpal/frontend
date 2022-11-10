@@ -16,7 +16,7 @@
             </section>
             <section>
                 <div >
-                    <v-carousel hide-delimiters cycle  interval="4000" show-arrows-on-hove >
+                    <v-carousel height="auto" hide-delimiters cycle  interval="4000" show-arrows-on-hove >
                         <v-carousel-item
                         v-for="(item,i) in items2"
                         :key="i"
@@ -27,7 +27,7 @@
                                 :src="item.src"
                                 cols="6" xs sm md lg="6" xl="3"
                             >
-                                <v-row
+                                <v-row class="car"
                                     align="center"
                                     justify="center"
                                 >
@@ -134,10 +134,10 @@
                                             cols="12"
                                         >
                                             <h1 class="text-h4 font-weight-thin mb-4">
-                                            Vuetify
+                                            Comunidad Maya
                                             </h1>
                                             <h4 class="subheading">
-                                            Build your application today!
+                                            Siempre hay que tener presente nuestras raíces
                                             </h4>
                                         </v-col>
                                     </v-row>
@@ -158,10 +158,10 @@
                                             cols="12"
                                         >
                                             <h1 class="text-h4 font-weight-thin mb-4">
-                                            Vuetify
+                                            Gobernadorta de Quintana Roo
                                             </h1>
                                             <h4 class="subheading">
-                                            Build your application today!
+                                            Primera Mujer Gobernadora de Quinatana Roo
                                             </h4>
                                         </v-col>
                                     </v-row>
@@ -182,10 +182,10 @@
                                             cols="12"
                                         >
                                             <h1 class="text-h4 font-weight-thin mb-4">
-                                            Vuetify
+                                            Mary Hernández
                                             </h1>
                                             <h4 class="subheading">
-                                            Build your application today!
+                                            Actual Gobernadora de Felipe Carrillo Puerto
                                             </h4>
                                         </v-col>
                                     </v-row>
@@ -328,3 +328,10 @@ export default {
     }
 }
 </script>
+<style>
+.car
+{
+   display: flex;
+   align-items: center;
+}
+</style>
