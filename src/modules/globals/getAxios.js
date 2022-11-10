@@ -1,8 +1,8 @@
-import { Api } from "./axiosSL"
+import { apiLogin } from "./axiosSL"
 
 export const requestPost = async (ruta, dato) => {
     let res = null
-    Api({
+   await  apiLogin({
         method: "POST",
         url: ruta,
         data: {data:dato}
@@ -16,7 +16,7 @@ export const requestPost = async (ruta, dato) => {
 
 export const queryGET = async (ruta, dato) => {
     let res = null
-    Api({
+    await apiLogin({
         method: "POST",
         url: [ruta, "/" ,dato].join(),
     }).then(({data}) => {
@@ -29,7 +29,7 @@ export const queryGET = async (ruta, dato) => {
 
 export const requestGET = async (ruta) => {
     let res = null
-    await Api({
+    await apiLogin({
         method: "GET",
         url: ruta,
     }).then(({data}) => {
@@ -45,7 +45,7 @@ export const upDataFileGlobal = async ( files, ruta ) => {
     let config = {headers:{'content-type':'multipart/form-data'}}
     let formData = new FormData()
     formData.append('file', files)
-    await Api({
+    await apiLogin({
         method: 'POST',
         url:ruta,
         data: formData,
