@@ -128,10 +128,10 @@
                                                     cols="12"
                                                 >
                                                     <h1 class="text-h4 font-weight-thin mb-4">
-                                                    Vuetify
+                                                    Comunidad Maya
                                                     </h1>
                                                     <h4 class="subheading">
-                                                    Build your application today!
+                                                    Nunva hay que olvidar nuestras raíces
                                                     </h4>
                                                 </v-col>
                                             </v-row>
@@ -152,10 +152,10 @@
                                                     cols="12"
                                                 >
                                                     <h1 class="text-h4 font-weight-thin mb-4">
-                                                    Vuetify
+                                                    Mara Lezama gobernadora de Quinata Roo
                                                     </h1>
                                                     <h4 class="subheading">
-                                                    Build your application today!
+                                                    Primera mujer Gobernadora del Estado de Quintana Roo.
                                                     </h4>
                                                 </v-col>
                                             </v-row>
@@ -176,10 +176,10 @@
                                                     cols="12"
                                                 >
                                                     <h1 class="text-h4 font-weight-thin mb-4">
-                                                    Vuetify
+                                                    Mary Hernández
                                                     </h1>
                                                     <h4 class="subheading">
-                                                    Build your application today!
+                                                    Actual gobernadora de Felipe Carrillo Puerto
                                                     </h4>
                                                 </v-col>
                                             </v-row>
