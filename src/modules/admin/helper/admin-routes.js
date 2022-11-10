@@ -4,7 +4,7 @@ import rutasSAdmin from '../helper/rutas'
 
 
 const rutas_S_admin = ( ) => {
-    if ( Store.state.loginModule.rol === 'SuperAdmin' && Store.state.loginModule.auth ) {
+    if ( Store.state.loginModule.rol === 'SUPERADMIN' && Store.state.loginModule.auth ) {
         return rutasSAdmin
     } else {
         return undefined

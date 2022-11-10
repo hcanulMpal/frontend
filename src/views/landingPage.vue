@@ -11,6 +11,7 @@
         >
 
             <v-app-bar-nav-icon @click="drawer = !drawer"><v-icon>mdi-view-sequential</v-icon></v-app-bar-nav-icon>
+            
             <div class="contenedor">
                 <v-img class="mt-2 imagen" :src= "require('@/assets/IMAGOTIPO-HORIZONTAL-BLANCO.png')"></v-img>   
             </div>
