@@ -77,14 +77,13 @@ export default {
         rules: rules,
     }),
     methods: {
-        ...mapMutations('loginModule',['myLector']),
+        ...mapMutations('loginModule',['mylector']),
         async submit() {
-            this.huella = true
+            this.$store.commit('loginModule/myLector', true)
             if (this.$refs.form.validate()){
                 const logger = await requestPost(`/autho/signin`, this.User)
-                console.log(logger);
                 if (logger == 401){
-                    this.myLector = false
+                    this.$store.commit('loginModule/myLector', true)
                     this.$swal({
                         title: 'Error',
                         text: "User name is wrong or password iswrong",
@@ -94,7 +93,7 @@ export default {
                 }
             }
             
-            this.huella = false
+            this.$store.commit('loginModule/myLector', false)
         },
     },
 }
