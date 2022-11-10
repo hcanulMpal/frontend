@@ -4,10 +4,15 @@ import VueRouter from 'vue-router'
 import almaRoute from '@/modules/alma/router'
 import alexRoute from '@/modules/alex/router'
 import hugoRoute from '@/modules/hugo/router'
+import loginForm from '@/modules/login/router'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path:'/admin',
+    ... loginForm
+  },
   {
     path:'/',
     ... almaRoute

@@ -6,13 +6,15 @@
             color="primary"
             dark
             shrink-on-scroll
-            scroll-target="#scrolling-techniques-2"
+            scroll-target="#scrolling-techniques"
             prominent
         >
 
             <v-app-bar-nav-icon @click="drawer = !drawer"><v-icon>mdi-view-sequential</v-icon></v-app-bar-nav-icon>
-
-            <v-img class="mt-2" :src= "require('@/assets/IMAGOTIPO-HORIZONTAL-BLANCO.png')" max-height="100" max-width="400"></v-img>   
+            <div class="contenedor">
+                <v-img class="mt-2 imagen" :src= "require('@/assets/IMAGOTIPO-HORIZONTAL-BLANCO.png')"></v-img>   
+            </div>
+            
             <v-spacer></v-spacer>
             <v-btn icon>
             <v-icon color="deep-orange accent-3">mdi-fingerprint</v-icon>
@@ -155,6 +157,17 @@ export default {
 }
 </script>
 <style scoped>
+.contenedor
+{
+    max-width: 250px;
+    max-height: auto;
+}
+.imagen
+{
+    width: inherit;
+    max-width: 100%;
+    height: auto;
+}
 .red
 {
     position: fixed;

@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { BACKEND } from './constans';
 
-export const Api = axios.create({
+export const apiLogin = axios.create({
     baseURL: BACKEND,
 })
 
-Api.interceptors.response.use(res => {
+apiLogin.interceptors.response.use(res => {
     return res;
 }, err => {
     if(!err.response){
