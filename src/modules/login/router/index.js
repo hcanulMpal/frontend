@@ -1,4 +1,4 @@
 export default {
     name:'login',
-    component: () => import(/* webpackChunkName: "LandingPage" */ '../components/loginForm.vue'),
+    component: () => import(/* webpackChunkName: "loginPage" */ '../components/loginForm.vue'),
 }

@@ -58,8 +58,9 @@
 </template>
 <script>
 import { mapMutations } from 'vuex';
-import { rules } from "@/modules/globals/rules.js";
-import { requestPost } from  "@/modules/globals/getAxios.js"
+import { rules } from "@/modules/globals/rules";
+import { requestPost } from  "@/modules/globals/getAxios"
+import { setToken, getRol } from "../helper/auth";
 import Lector from './lectorLector.vue';
 
 export default {
@@ -91,9 +92,11 @@ export default {
                         footer:"Direrección de Informatica - Departamento de Desarrollo"
                     })
                 }
+                setToken(logger);
+                this.$router.push({name:getRol()})
+                this.$store.commit('loginModule/myLector', false)
             }
             
-            this.$store.commit('loginModule/myLector', false)
         },
     },
 }
