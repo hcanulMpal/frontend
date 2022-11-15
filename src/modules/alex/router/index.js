@@ -18,6 +18,11 @@ export default {
                 name: "presidentaPre",
                 component: ()=> import(/* webpackChunkName: "Presidencia" */ '../components/presidencia/presidentaPre.vue')
             },
+            {
+                path: "Dependencias/Dependencia",
+                name: "dependenciaDep",
+                component: ()=> import(/* webpackChunkName: "Presidencia" */ '../components/dependencias/dependenciaDep..vue')
+            }
             
 
         ]

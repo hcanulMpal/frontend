@@ -1,10 +1,9 @@
-
 <template>
     <gmap-map
       :center="center"
       text-md-center
       :zoom="20"
-      style="width: 100%; height: 400px"
+      style="width:100%; height: 300px"
     >
       <gmap-marker
         :key="index"
@@ -19,7 +18,7 @@
   </template>
   <script>
     export default {
-        name:'googleMap',
+        name:'googleMa',
       data () {
         return {
           
