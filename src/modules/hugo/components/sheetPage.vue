@@ -9,7 +9,7 @@
                     max-height="2500"
                 >
                     <div v-if="$route.path == '/'">
-                        <div>
+                        <div >
                             <v-carousel hide-delimiters cycle  interval="4000" show-arrows-on-hove height="auto">
                                 <v-carousel-item
                                 v-for="(item,i) in items2"
@@ -20,15 +20,15 @@
                                         :src="item.src"
                                     >
                                         <v-row
-                                            align="center"
-                                            justify="center"
-                                            class="pa-2 align-self-center justify-xl-space-between justify-lg-space-between justify-md-space-between justify-sm-space-between justify-space-between "
+                                        align="center"
+                                        justify="center"
+                                        class="pa-2 align-self-center justify-xl-space-between justify-lg-space-between justify-md-space-between justify-sm-space-between justify-space-between "
                                         >
                                             <v-col
                                                 class="text-center pa-2 align-self-center"
                                                 cols="12"
                                             >
-                                                <h1 class="text-h4 mb-4 pa-2 align-self-center">
+                                                    <h1 class="text-h4 mb-4 pa-2 align-self-center">
                                                     {{item.title}}
                                                 </h1>
                                                 <h4 class="subheading pa-2 align-self-center">
@@ -324,4 +324,9 @@ export default {
 }
 </script>
 <style scoped>
+    .video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 </style>

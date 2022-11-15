@@ -149,7 +149,7 @@ export default {
                 action: 'mdi-bulletin-board',
                 title:'Dependencias',
                 items:[
-                    {title: 'CIAM', enlace:{name:'CIAMDep'}, icon:"mdi-newspaper"}
+                    {title: 'Dependencia', enlace:{name:'dependenciaDep'}, icon:"mdi-newspaper"}
                 ]
             },
             {

@@ -19,9 +19,9 @@ export default {
                 component: ()=> import(/* webpackChunkName: "Presidencia" */ '../components/presidencia/presidentaPre.vue')
             },
             {
-                path: "Dependencias/CIAM",
-                name: "CIAMDep",
-                component: ()=> import(/* webpackChunkName: "Presidencia" */ '../components/dependencias/CIAMDep.vue')
+                path: "Dependencias/Dependencia",
+                name: "dependenciaDep",
+                component: ()=> import(/* webpackChunkName: "Presidencia" */ '../components/dependencias/dependenciaDep..vue')
             }
             
 
