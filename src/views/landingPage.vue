@@ -13,7 +13,11 @@
             <v-app-bar-nav-icon @click="drawer = !drawer"><v-icon>mdi-view-sequential</v-icon></v-app-bar-nav-icon>
             
             <div class="contenedor">
-                <v-img class="mt-2 imagen" :src= "require('@/assets/IMAGOTIPO-HORIZONTAL-BLANCO.png')"></v-img>   
+                <v-layout>
+                    <v-flex row wrap align-center>
+                        <v-img class="mt-2 imagen" max-height="55%" max-width="auto" :src= "require('@/assets/IMAGOTIPO-HORIZONTAL-BLANCO.png')"></v-img>   
+                    </v-flex>
+                </v-layout>
             </div>
             
             <v-spacer></v-spacer>
