@@ -5,7 +5,6 @@
      <h1 class="text-center mt-5 title">{{prensac.title}}</h1>
      <v-img :src="prensac.image" height="350"></v-img>
      <section class="d-flex justify-space-around mb-6">
-        <p class="font-weight-regular" > <span class="font-weight-bold">Categoria:</span>  {{ prensac.categoria }} </p> 
         <p class="font-weight-regular" > <span class="font-weight-bold">Fecha:</span>  {{ prensac.fecha }} </p>
         <p class="font-weight-regular" > <span class="font-weight-bold">Escrito por:</span>  {{ prensac.autor }} </p>
         </section>

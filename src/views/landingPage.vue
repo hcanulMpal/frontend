@@ -159,6 +159,13 @@ export default {
                 
             },
             {
+                action: 'mdi-bulletin-board',
+                title:'Dependencias',
+                items:[
+                    {title: 'Dependencia', enlace:{name:'dependenciaDep'}, icon:"mdi-newspaper"}
+                ]
+            },
+            {
                 action: 'mdi-nut',
                 title: 'Presidencia',
                 items: [
