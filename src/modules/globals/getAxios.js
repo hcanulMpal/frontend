@@ -40,7 +40,7 @@ export const requestGET = async (ruta) => {
     return res
 }
 
-export const upDataFileGlobal = async ( files, ruta ) => {
+export const upDataFileGlobal = async ( ruta, files ) => {
     let res = null
     let config = {headers:{'content-type':'multipart/form-data'}}
     let formData = new FormData()
