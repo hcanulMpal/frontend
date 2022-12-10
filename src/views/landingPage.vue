@@ -143,7 +143,8 @@ export default {
                 title: 'Sala de Prensa',
                 items: [
                     { title: 'Prensa', enlace:{name:'prensaSalaP'}, icon:"mdi-newspaper-variant"},
-                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper"}
+                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper"},
+                    
                 ]
                 
             },

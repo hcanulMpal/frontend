@@ -6,6 +6,7 @@ import alexRoute from '@/modules/alex/router'
 import hugoRoute from '@/modules/hugo/router'
 import loginForm from '@/modules/login/router'
 import SuperAdmin from "@/modules/admin/router"
+import Administrador from "@/modules/administrador/router"
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,10 @@ const routes = [
   {
     path:'/',
     ... alexRoute
+  },
+  {
+    path: '/Administrador',
+    ...Administrador
   },
   {
     path:'/',
