@@ -63,10 +63,9 @@
                                         <v-select
                                                 outlined
                                                 dense
-                                                v-model="editedItem.tipo"
+                                                v-model="editedItem.telefono"
                                                 :items="items"
                                                 item-text="tipo"
-                                                item-value="tipo"
                                                 label="Tipo"
                                                 persistent-hint
                                                 return-object
@@ -82,14 +81,14 @@
                                       text
                                       @click="close"
                                     >
-                                      Cancel
+                                      Cancelar
                                     </v-btn>
                                     <v-btn
                                       color="blue darken-1"
                                       text
                                       @click="save"
                                     >
-                                      Save
+                                      Guardar
                                     </v-btn>
                                   </v-card-actions>
                                 </v-card>
@@ -126,6 +125,8 @@
 import { requestGET } from '../../../globals/getAxios'
   export default {
     data: () => ({
+      valid: true,
+      items: null,
       dialog: false,
       headers: [
         {
@@ -142,16 +143,16 @@ import { requestGET } from '../../../globals/getAxios'
       Autor: [],
       editedIndex: -1,
       editedItem: {
-        nombre: '',
-        telefono: 0,
-        email: '',
-        tipo: '',
+        nombre: "",
+        telefono: "",
+        email: "",
+        tipo: "",
       },
       defaultItem: {
-        nombre: '',
-        telefono: 0,
-        email: '',
-        tipo: '',
+        nombre: "",
+        telefono: "",
+        email: "",
+        tipo: "",
       },
     }),
 

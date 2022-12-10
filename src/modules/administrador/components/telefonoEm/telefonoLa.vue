@@ -110,6 +110,7 @@ import { requestGET } from '../../../globals/getAxios'
   export default {
     data: () => ({
       dialog: false,
+      valid:true,
       headers: [
         {
           text: 'Dependencia',
@@ -151,8 +152,8 @@ import { requestGET } from '../../../globals/getAxios'
     methods: {
       async getData(){
             const datos = await requestGET("/landing/NumeroE")
-            this.Numeros.push(datos[''][0])
-            console.log(this.Numeros);
+            console.log(datos);
+            this.Numeros = datos
         },
       async initialize () {
         await this.getData()

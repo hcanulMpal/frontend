@@ -133,6 +133,8 @@
 import { requestGET } from '../../../globals/getAxios'
   export default {
     data: () => ({
+      valid: true,
+      items: null,
       dialog: false,
       headers: [
         {
