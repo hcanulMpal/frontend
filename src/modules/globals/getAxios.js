@@ -45,6 +45,7 @@ export const upDataFileGlobal = async ( ruta, files ) => {
     let config = {headers:{'content-type':'multipart/form-data'}}
     let formData = new FormData()
     formData.append('file', files)
+    console.log(formData);
     await apiLogin({
         method: 'POST',
         url:ruta,

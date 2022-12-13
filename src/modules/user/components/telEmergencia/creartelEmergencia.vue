@@ -48,7 +48,7 @@
         name:'creartelEmergencia',
         data(){
             return{
-              show: false,
+              valid:true,
               name:"",
               mobile:"",
             }
@@ -57,8 +57,12 @@
         },
         methods:{
              async guardar (){
-                 const res = await requestPost("/landing/guardI", this.nombre, this.telefono)
-                console.log(res)
+                if (this.$refs.form.validate()){
+                    console.log([this.name, this.mobile]);
+                    const res = await requestPost("/landing/SN", [this.name, this.mobile])
+                    console.log(res)
+                }
+                
              }
         },
     }

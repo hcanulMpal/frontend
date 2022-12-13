@@ -36,7 +36,8 @@
                                     </v-row>
                                     <v-row dense>
                                         <v-col>
-                                            <v-file-input label="Foto" v-model="image" show-size counter multiple filled prepend-icon="mdi-camera"></v-file-input>
+                                            <v-file-input label="Foto" v-model="image" accept="image/png, image/jpeg, image/bmp"  show-size counter multiple filled @change="onFileChange" prepend-icon="mdi-camera"></v-file-input>
+                                            <v-img :src="imageUrl" />
                                         </v-col>
                                     </v-row>
                                     <v-btn
@@ -70,11 +71,13 @@
                 description:"",
                 categorys:"",
                 image:null,
+                imageUrl: "",
 
             }
         },
         created(){  
             this.inicio()
+            
         },
         methods:{
             async inicio(){
@@ -84,9 +87,13 @@
             
              async guardar (){
                  const res = await upDataFileGlobal("/landing/guardI", this.image, [this.description,
-                                                                                       this.categorys])
+                                                                                    this.select])
+                //  this.$refs.form.reset()
              console.log(res)
-             }
+             
+             },
+             
+             
         },
     }
 </script>
