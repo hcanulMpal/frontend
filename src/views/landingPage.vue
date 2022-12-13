@@ -97,12 +97,13 @@
             id="scrolling-techniques-2"
             class="overflow-y-auto"
         >
+            <Arbolito class="red2" />
             <div class="red">
                 <div class="facebook">
                     <a href="https://www.facebook.com/AyuntamientoFCP" target="_blank"><v-icon color="white">mdi-facebook</v-icon></a>
                 </div>
                 <!-- <div class="instagram">
-                    <a href="https://instagram.com/ma.ryhernandez?igshid=YmMyMTA2M2Y=" target="_blank"><v-icon color="white">mdi-instagram</v-icon></a>
+                    
                 </div> -->
                 <!-- <div class="twitter">
                     <a href="https://twitter.com/Ayto_FCP?t=JX__rGKIFnjOYeuvvdoiAw&s=09" target="_blank"><v-icon color="white">mdi-twitter</v-icon></a>
@@ -116,13 +117,14 @@
     </v-card>    
   </v-container>
 </template>
-
 <script>
 import SheetPage from '../modules/hugo/components/sheetPage.vue'
+import Arbolito from '../modules/hugo/components/arboLito.vue'
 
 export default {
     components:{
         SheetPage,
+        Arbolito,
     },
     data: () => ({
         mini: true,
@@ -154,7 +156,8 @@ export default {
                 title: 'Sala de Prensa',
                 items: [
                     { title: 'Prensa', enlace:{name:'prensaSalaP'}, icon:"mdi-newspaper-variant"},
-                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper"}
+                    { title: 'Avisos', enlace:{name:'avisosSalaP'}, icon:"mdi-newspaper"},
+                    
                 ]
                 
             },
@@ -189,6 +192,13 @@ export default {
     max-width: 100%;
     height: auto;
 }
+.red2
+{
+    position: fixed;
+    top: 530px;
+    z-index: 100;
+    right: 25px;
+}
 .red
 {
     position: fixed;
@@ -220,4 +230,6 @@ export default {
     outline: none;
     text-decoration: none;
 }
+
+
 </style>

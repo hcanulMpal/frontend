@@ -5,9 +5,9 @@
      <h1 class="text-center mt-5 title">{{aviso.title}}</h1>
      <v-img :src="aviso.image" maxheight="400"></v-img>
      <section class="d-flex justify-space-around mb-6">
-        <p class="font-weight-regular pl-2" > <span class="font-weight-bold">Categoria:</span>  {{ aviso.categoria }} </p>
+        <p class="font-weight-regular pl-2" > <span class="font-weight-bold">Categoria:</span>  {{ aviso.id_category }} </p>
         <p class="font-weight-regular" > <span class="font-weight-bold">Fecha:</span>  {{ aviso.fecha }} </p>
-        <p class="font-weight-regular" > <span class="font-weight-bold">Escrito por:</span>  {{ aviso.autor }} </p>
+        <p class="font-weight-regular" > <span class="font-weight-bold">Escrito por:</span>  {{ aviso.id_author}} </p>
         </section>
         <v-card-actions>
             <v-btn

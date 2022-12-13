@@ -5,7 +5,7 @@ export const requestPost = async (ruta, dato) => {
    await  apiLogin({
         method: "POST",
         url: ruta,
-        data: {data:dato}
+        data: {data:dato} 
     }).then(({data}) => {
         res = data
     }).catch(error => {
